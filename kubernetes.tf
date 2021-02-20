@@ -33,7 +33,7 @@ resource "kubernetes_deployment" "flask-app" {
   }
 
   spec {
-    replicas = 4
+    replicas = 3
     selector {
       match_labels = {
         App = "flask-app"
