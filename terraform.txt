@@ -50495,3 +50495,1463 @@ X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
 2021/02/20 13:23:38 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
 2021/02/20 13:23:38 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
 2021/02/20 13:23:38 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2021/02/20 13:34:21 [INFO] Terraform version: 0.14.6  
+2021/02/20 13:34:21 [INFO] Go runtime version: go1.15.6
+2021/02/20 13:34:21 [INFO] CLI args: []string{"/usr/local/bin/terraform", "terraform", "des", "terraform"}
+2021/02/20 13:34:21 [DEBUG] Attempting to open CLI config file: /Users/merve/.terraformrc
+2021/02/20 13:34:21 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021/02/20 13:34:21 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021/02/20 13:34:21 [DEBUG] ignoring non-existing provider search directory /Users/merve/.terraform.d/plugins
+2021/02/20 13:34:21 [DEBUG] ignoring non-existing provider search directory /Users/merve/Library/Application Support/io.terraform/plugins
+2021/02/20 13:34:21 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2021/02/20 13:34:21 [INFO] CLI command args: []string{"terraform", "des", "terraform"}
+2021/02/20 13:34:22 [INFO] Terraform version: 0.14.6  
+2021/02/20 13:34:22 [INFO] Go runtime version: go1.15.6
+2021/02/20 13:34:22 [INFO] CLI args: []string{"/usr/local/bin/terraform", "destroy"}
+2021/02/20 13:34:22 [DEBUG] Attempting to open CLI config file: /Users/merve/.terraformrc
+2021/02/20 13:34:22 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021/02/20 13:34:22 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021/02/20 13:34:22 [DEBUG] ignoring non-existing provider search directory /Users/merve/.terraform.d/plugins
+2021/02/20 13:34:22 [DEBUG] ignoring non-existing provider search directory /Users/merve/Library/Application Support/io.terraform/plugins
+2021/02/20 13:34:22 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2021/02/20 13:34:22 [INFO] CLI command args: []string{"destroy"}
+2021/02/20 13:34:22 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2021/02/20 13:34:22 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2021/02/20 13:34:22 [DEBUG] New state was assigned lineage "c8d8c6d6-23ab-9519-4bdf-b8c6a600f87c"
+2021/02/20 13:34:22 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2021/02/20 13:34:22 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2021/02/20 13:34:22 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2021/02/20 13:34:22 [TRACE] getproviders.SearchLocalDirectory: .terraform/providers is a symlink to .terraform/providers
+2021/02/20 13:34:22 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/kubernetes v2.0.2 for darwin_amd64 at .terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64
+2021/02/20 13:34:22 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64 as a candidate package for registry.terraform.io/hashicorp/kubernetes 2.0.2
+2021/02/20 13:34:22 [DEBUG] checking for provisioner in "."
+2021/02/20 13:34:22 [DEBUG] checking for provisioner in "/usr/local/bin"
+2021/02/20 13:34:22 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2021/02/20 13:34:22 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2021/02/20 13:34:22 [INFO] backend/local: starting Apply operation
+2021/02/20 13:34:22 [TRACE] backend/local: requesting state manager for workspace "default"
+2021/02/20 13:34:22 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2021/02/20 13:34:22 [TRACE] backend/local: requesting state lock for workspace "default"
+2021/02/20 13:34:22 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2021/02/20 13:34:22 [TRACE] statemgr.Filesystem: existing snapshot has lineage "fb7586cc-b23e-2ba1-1fa7-7f623e745739" serial 70
+2021/02/20 13:34:22 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2021/02/20 13:34:22 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2021/02/20 13:34:22 [TRACE] backend/local: reading remote state for workspace "default"
+2021/02/20 13:34:22 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2021/02/20 13:34:22 [TRACE] statemgr.Filesystem: read snapshot with lineage "fb7586cc-b23e-2ba1-1fa7-7f623e745739" serial 70
+2021/02/20 13:34:22 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2021/02/20 13:34:22 [TRACE] backend/local: building context for current working directory
+2021/02/20 13:34:22 [TRACE] terraform.NewContext: starting
+2021/02/20 13:34:22 [TRACE] terraform.NewContext: loading provider schemas
+2021/02/20 13:34:22 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/kubernetes"
+2021-02-20T13:34:22.615-0500 [INFO]  plugin: configuring client automatic mTLS
+2021-02-20T13:34:22.652-0500 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5]
+2021-02-20T13:34:22.659-0500 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52791
+2021-02-20T13:34:22.660-0500 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5
+2021-02-20T13:34:22.722-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: configuring server automatic mTLS: timestamp=2021-02-20T13:34:22.722-0500
+2021-02-20T13:34:22.753-0500 [DEBUG] plugin.terraform-provider-kubernetes_v2.0.2_x5: plugin address: address=/var/folders/jt/d0b4ml1x16x8gc88fk3f43rh0000gn/T/plugin472801482 network=unix timestamp=2021-02-20T13:34:22.753-0500
+2021-02-20T13:34:22.753-0500 [DEBUG] plugin: using plugin: version=5
+2021-02-20T13:34:22.826-0500 [TRACE] plugin.stdio: waiting for stdio data
+2021/02/20 13:34:22 [TRACE] GRPCProvider: GetSchema
+2021/02/20 13:34:22 [TRACE] GRPCProvider: Close
+2021-02-20T13:34:22.869-0500 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-02-20T13:34:22.872-0500 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52791
+2021-02-20T13:34:22.872-0500 [DEBUG] plugin: plugin exited
+2021/02/20 13:34:22 [TRACE] terraform.NewContext: complete
+2021/02/20 13:34:22 [TRACE] backend/local: finished building terraform.Context
+2021/02/20 13:34:22 [TRACE] backend/local: requesting interactive input, if necessary
+2021/02/20 13:34:22 [TRACE] Context.Input: Prompting for provider arguments
+2021/02/20 13:34:22 [TRACE] Context.Input: Provider provider.kubernetes declared at kubernetes.tf:9,1-22
+2021/02/20 13:34:22 [TRACE] Context.Input: Input for provider.kubernetes: map[string]cty.Value{}
+2021/02/20 13:34:22 [TRACE] backend/local: running validation operation
+2021/02/20 13:34:22 [INFO] terraform: building graph: GraphTypeValidate
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021/02/20 13:34:22 [TRACE] ConfigTransformer: Starting for path: 
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+  ------
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.StateTransformer
+2021/02/20 13:34:22 [TRACE] StateTransformer: state is empty, so nothing to do
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021/02/20 13:34:22 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_service.flask-app" (*terraform.NodeValidatableResource) config from kubernetes.tf:72,1-42
+2021/02/20 13:34:22 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_service.flask-app
+2021/02/20 13:34:22 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_namespace.flaskapp" (*terraform.NodeValidatableResource) config from kubernetes.tf:13,1-43
+2021/02/20 13:34:22 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_namespace.flaskapp
+2021/02/20 13:34:22 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_deployment.flask-app" (*terraform.NodeValidatableResource) config from kubernetes.tf:27,1-45
+2021/02/20 13:34:22 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_deployment.flask-app
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021/02/20 13:34:22 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" provider configuration from kubernetes.tf:9,1-22
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021/02/20 13:34:22 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_service.flask-app
+2021/02/20 13:34:22 [DEBUG] ProviderTransformer: "kubernetes_service.flask-app" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:22 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_namespace.flaskapp
+2021/02/20 13:34:22 [DEBUG] ProviderTransformer: "kubernetes_namespace.flaskapp" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:22 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_deployment.flask-app
+2021/02/20 13:34:22 [DEBUG] ProviderTransformer: "kubernetes_deployment.flask-app" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2021/02/20 13:34:22 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021/02/20 13:34:22 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:22 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_service.flask-app
+2021/02/20 13:34:22 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_namespace.flaskapp
+2021/02/20 13:34:22 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_deployment.flask-app
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021/02/20 13:34:22 [DEBUG] ReferenceTransformer: "kubernetes_namespace.flaskapp" references: []
+2021/02/20 13:34:22 [DEBUG] ReferenceTransformer: "kubernetes_deployment.flask-app" references: []
+2021/02/20 13:34:22 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" references: []
+2021/02/20 13:34:22 [DEBUG] ReferenceTransformer: "kubernetes_service.flask-app" references: [kubernetes_deployment.flask-app]
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.attachDataResourceDependenciesTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.attachDataResourceDependenciesTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/02/20 13:34:22 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021/02/20 13:34:22 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodeValidatableResource
+    kubernetes_deployment.flask-app - *terraform.NodeValidatableResource
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    kubernetes_service.flask-app - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_namespace.flaskapp - *terraform.NodeValidatableResource
+    kubernetes_service.flask-app - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/02/20 13:34:22 [DEBUG] Starting graph walk: walkValidate
+2021/02/20 13:34:22 [TRACE] dag/walk: visiting "provider[\"registry.terraform.io/hashicorp/kubernetes\"]"
+2021/02/20 13:34:22 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-02-20T13:34:22.883-0500 [INFO]  plugin: configuring client automatic mTLS
+2021-02-20T13:34:22.911-0500 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5]
+2021-02-20T13:34:22.918-0500 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52792
+2021-02-20T13:34:22.918-0500 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5
+2021-02-20T13:34:22.960-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: configuring server automatic mTLS: timestamp=2021-02-20T13:34:22.960-0500
+2021-02-20T13:34:22.989-0500 [DEBUG] plugin: using plugin: version=5
+2021-02-20T13:34:22.989-0500 [DEBUG] plugin.terraform-provider-kubernetes_v2.0.2_x5: plugin address: network=unix address=/var/folders/jt/d0b4ml1x16x8gc88fk3f43rh0000gn/T/plugin475713135 timestamp=2021-02-20T13:34:22.988-0500
+2021-02-20T13:34:23.040-0500 [TRACE] plugin.stdio: waiting for stdio data
+2021/02/20 13:34:23 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" provider for provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:23 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/kubernetes"]: using explicit config only
+2021/02/20 13:34:23 [TRACE] GRPCProvider: GetSchema
+2021/02/20 13:34:23 [TRACE] GRPCProvider: PrepareProviderConfig
+2021/02/20 13:34:23 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"]": visit complete
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "kubernetes_deployment.flask-app"
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_deployment.flask-app": starting visit (*terraform.NodeValidatableResource)
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "kubernetes_namespace.flaskapp"
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_namespace.flaskapp": starting visit (*terraform.NodeValidatableResource)
+2021/02/20 13:34:23 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_namespace.flaskapp": visit complete
+2021/02/20 13:34:23 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_deployment.flask-app": visit complete
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "kubernetes_service.flask-app"
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_service.flask-app": starting visit (*terraform.NodeValidatableResource)
+2021/02/20 13:34:23 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_service.flask-app": visit complete
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)"
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2021/02/20 13:34:23 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021/02/20 13:34:23 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021/02/20 13:34:23 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021/02/20 13:34:23 [TRACE] GRPCProvider: Close
+2021-02-20T13:34:23.121-0500 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-02-20T13:34:23.125-0500 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52792
+2021-02-20T13:34:23.125-0500 [DEBUG] plugin: plugin exited
+2021/02/20 13:34:23 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)": visit complete
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "root"
+2021/02/20 13:34:23 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021/02/20 13:34:23 [TRACE] vertex "root": visit complete
+2021/02/20 13:34:23 [INFO] backend/local: apply calling Plan
+2021/02/20 13:34:23 [INFO] terraform: building graph: GraphTypePlanDestroy
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.StateTransformer
+2021/02/20 13:34:23 [TRACE] StateTransformer: creating nodes for both current and deposed instance objects
+2021/02/20 13:34:23 [TRACE] StateTransformer: added *terraform.NodePlanDestroyableResourceInstance for kubernetes_deployment.flask-app current object
+2021/02/20 13:34:23 [TRACE] StateTransformer: added *terraform.NodePlanDestroyableResourceInstance for kubernetes_namespace.flaskapp current object
+2021/02/20 13:34:23 [TRACE] StateTransformer: added *terraform.NodePlanDestroyableResourceInstance for kubernetes_service.flask-app current object
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.StateTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+  ------
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021/02/20 13:34:23 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_deployment.flask-app" (*terraform.NodePlanDestroyableResourceInstance) config from kubernetes.tf:27,1-45
+2021/02/20 13:34:23 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_deployment.flask-app
+2021/02/20 13:34:23 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_namespace.flaskapp" (*terraform.NodePlanDestroyableResourceInstance) config from kubernetes.tf:13,1-43
+2021/02/20 13:34:23 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_namespace.flaskapp
+2021/02/20 13:34:23 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_service.flask-app" (*terraform.NodePlanDestroyableResourceInstance) config from kubernetes.tf:72,1-42
+2021/02/20 13:34:23 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_service.flask-app
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021/02/20 13:34:23 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" provider configuration from kubernetes.tf:9,1-22
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021/02/20 13:34:23 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_namespace.flaskapp
+2021/02/20 13:34:23 [DEBUG] ProviderTransformer: "kubernetes_namespace.flaskapp" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:23 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_service.flask-app
+2021/02/20 13:34:23 [DEBUG] ProviderTransformer: "kubernetes_service.flask-app" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:23 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_deployment.flask-app
+2021/02/20 13:34:23 [DEBUG] ProviderTransformer: "kubernetes_deployment.flask-app" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2021/02/20 13:34:23 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2021/02/20 13:34:23 [TRACE] DestroyEdgeTransformer: "kubernetes_deployment.flask-app" (*terraform.NodePlanDestroyableResourceInstance) destroys kubernetes_deployment.flask-app
+2021/02/20 13:34:23 [TRACE] DestroyEdgeTransformer: "kubernetes_namespace.flaskapp" (*terraform.NodePlanDestroyableResourceInstance) destroys kubernetes_namespace.flaskapp
+2021/02/20 13:34:23 [TRACE] DestroyEdgeTransformer: "kubernetes_service.flask-app" (*terraform.NodePlanDestroyableResourceInstance) destroys kubernetes_service.flask-app
+2021/02/20 13:34:23 [TRACE] DestroyEdgeTransformer: kubernetes_deployment.flask-app has stored dependency of kubernetes_service.flask-app
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/02/20 13:34:23 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021/02/20 13:34:23 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+  kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app - *terraform.NodePlanDestroyableResourceInstance
+    kubernetes_namespace.flaskapp - *terraform.NodePlanDestroyableResourceInstance
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/02/20 13:34:23 [DEBUG] Starting graph walk: walkPlanDestroy
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "provider[\"registry.terraform.io/hashicorp/kubernetes\"]"
+2021/02/20 13:34:23 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-02-20T13:34:23.127-0500 [INFO]  plugin: configuring client automatic mTLS
+2021-02-20T13:34:23.153-0500 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5]
+2021-02-20T13:34:23.159-0500 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52793
+2021-02-20T13:34:23.159-0500 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5
+2021-02-20T13:34:23.202-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: configuring server automatic mTLS: timestamp=2021-02-20T13:34:23.202-0500
+2021-02-20T13:34:23.229-0500 [DEBUG] plugin.terraform-provider-kubernetes_v2.0.2_x5: plugin address: address=/var/folders/jt/d0b4ml1x16x8gc88fk3f43rh0000gn/T/plugin762164940 network=unix timestamp=2021-02-20T13:34:23.229-0500
+2021-02-20T13:34:23.230-0500 [DEBUG] plugin: using plugin: version=5
+2021/02/20 13:34:23 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" provider for provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:23 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"]": visit complete
+2021-02-20T13:34:23.291-0500 [TRACE] plugin.stdio: waiting for stdio data
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "kubernetes_namespace.flaskapp"
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "kubernetes_service.flask-app"
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_namespace.flaskapp": starting visit (*terraform.NodePlanDestroyableResourceInstance)
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_service.flask-app": starting visit (*terraform.NodePlanDestroyableResourceInstance)
+2021/02/20 13:34:23 [TRACE] ReadResourceInstanceState: reading state for kubernetes_namespace.flaskapp
+2021/02/20 13:34:23 [TRACE] UpgradeResourceState: schema version of kubernetes_namespace.flaskapp is still 0; calling provider "kubernetes" for any other minor fixups
+2021/02/20 13:34:23 [TRACE] GRPCProvider: UpgradeResourceState
+2021/02/20 13:34:23 [TRACE] GRPCProvider: GetSchema
+2021/02/20 13:34:23 [TRACE] ReadResourceInstanceState: reading state for kubernetes_service.flask-app
+2021/02/20 13:34:23 [TRACE] UpgradeResourceState: schema version of kubernetes_service.flask-app is still 1; calling provider "kubernetes" for any other minor fixups
+2021/02/20 13:34:23 [TRACE] GRPCProvider: UpgradeResourceState
+2021/02/20 13:34:23 [TRACE] EvalWriteDiff: recorded Delete change for kubernetes_namespace.flaskapp
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_namespace.flaskapp": visit complete
+2021/02/20 13:34:23 [TRACE] EvalWriteDiff: recorded Delete change for kubernetes_service.flask-app
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_service.flask-app": visit complete
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "kubernetes_deployment.flask-app"
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_deployment.flask-app": starting visit (*terraform.NodePlanDestroyableResourceInstance)
+2021/02/20 13:34:23 [TRACE] ReadResourceInstanceState: reading state for kubernetes_deployment.flask-app
+2021/02/20 13:34:23 [TRACE] UpgradeResourceState: schema version of kubernetes_deployment.flask-app is still 1; calling provider "kubernetes" for any other minor fixups
+2021/02/20 13:34:23 [TRACE] GRPCProvider: UpgradeResourceState
+2021/02/20 13:34:23 [TRACE] EvalWriteDiff: recorded Delete change for kubernetes_deployment.flask-app
+2021/02/20 13:34:23 [TRACE] vertex "kubernetes_deployment.flask-app": visit complete
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)"
+2021/02/20 13:34:23 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021/02/20 13:34:23 [TRACE] GRPCProvider: Close
+2021-02-20T13:34:23.359-0500 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-02-20T13:34:23.363-0500 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52793
+2021-02-20T13:34:23.363-0500 [DEBUG] plugin: plugin exited
+2021/02/20 13:34:23 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)": visit complete
+2021/02/20 13:34:23 [TRACE] dag/walk: visiting "root"
+2021/02/20 13:34:23 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021/02/20 13:34:23 [TRACE] vertex "root": visit complete
+2021/02/20 13:34:23 [DEBUG] command: asking for input: "Do you really want to destroy all resources?"
+2021/02/20 13:34:25 [INFO] backend/local: apply calling Apply
+2021/02/20 13:34:25 [INFO] terraform: building graph: GraphTypeApply
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021/02/20 13:34:25 [TRACE] ConfigTransformer: Starting for path: 
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  kubernetes_deployment.flask-app (expand) - *terraform.nodeExpandApplyableResource
+  kubernetes_namespace.flaskapp (expand) - *terraform.nodeExpandApplyableResource
+  kubernetes_service.flask-app (expand) - *terraform.nodeExpandApplyableResource
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.DiffTransformer
+2021/02/20 13:34:25 [TRACE] DiffTransformer starting
+2021/02/20 13:34:25 [TRACE] DiffTransformer: found Delete change for kubernetes_namespace.flaskapp 
+2021/02/20 13:34:25 [TRACE] DiffTransformer: kubernetes_namespace.flaskapp will be represented for destruction by kubernetes_namespace.flaskapp (destroy)
+2021/02/20 13:34:25 [TRACE] DiffTransformer: found Delete change for kubernetes_service.flask-app 
+2021/02/20 13:34:25 [TRACE] DiffTransformer: kubernetes_service.flask-app will be represented for destruction by kubernetes_service.flask-app (destroy)
+2021/02/20 13:34:25 [TRACE] DiffTransformer: found Delete change for kubernetes_deployment.flask-app 
+2021/02/20 13:34:25 [TRACE] DiffTransformer: kubernetes_deployment.flask-app will be represented for destruction by kubernetes_deployment.flask-app (destroy)
+2021/02/20 13:34:25 [TRACE] DiffTransformer complete
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.DiffTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+  kubernetes_deployment.flask-app (expand) - *terraform.nodeExpandApplyableResource
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+  kubernetes_namespace.flaskapp (expand) - *terraform.nodeExpandApplyableResource
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+  kubernetes_service.flask-app (expand) - *terraform.nodeExpandApplyableResource
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_namespace.flaskapp (expand)" (*terraform.nodeExpandApplyableResource) config from kubernetes.tf:13,1-43
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_namespace.flaskapp (expand)
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_deployment.flask-app (expand)" (*terraform.nodeExpandApplyableResource) config from kubernetes.tf:27,1-45
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_deployment.flask-app (expand)
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_service.flask-app (expand)" (*terraform.nodeExpandApplyableResource) config from kubernetes.tf:72,1-42
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_service.flask-app (expand)
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_namespace.flaskapp (destroy)" (*terraform.NodeDestroyResourceInstance) config from kubernetes.tf:13,1-43
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_namespace.flaskapp (destroy)
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_service.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) config from kubernetes.tf:72,1-42
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_service.flask-app (destroy)
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching to "kubernetes_deployment.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) config from kubernetes.tf:27,1-45
+2021/02/20 13:34:25 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to kubernetes_deployment.flask-app (destroy)
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021/02/20 13:34:25 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" provider configuration from kubernetes.tf:9,1-22
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+  kubernetes_deployment.flask-app (expand) - *terraform.nodeExpandApplyableResource
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+  kubernetes_namespace.flaskapp (expand) - *terraform.nodeExpandApplyableResource
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+  kubernetes_service.flask-app (expand) - *terraform.nodeExpandApplyableResource
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021/02/20 13:34:25 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_namespace.flaskapp (expand)
+2021/02/20 13:34:25 [DEBUG] ProviderTransformer: "kubernetes_namespace.flaskapp (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_deployment.flask-app (expand)
+2021/02/20 13:34:25 [DEBUG] ProviderTransformer: "kubernetes_deployment.flask-app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_service.flask-app (expand)
+2021/02/20 13:34:25 [DEBUG] ProviderTransformer: "kubernetes_service.flask-app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_namespace.flaskapp (destroy)
+2021/02/20 13:34:25 [DEBUG] ProviderTransformer: "kubernetes_namespace.flaskapp (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_service.flask-app (destroy)
+2021/02/20 13:34:25 [DEBUG] ProviderTransformer: "kubernetes_service.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/kubernetes"] serving kubernetes_deployment.flask-app (destroy)
+2021/02/20 13:34:25 [DEBUG] ProviderTransformer: "kubernetes_deployment.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_deployment.flask-app (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2021/02/20 13:34:25 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_deployment.flask-app (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021/02/20 13:34:25 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_deployment.flask-app (expand)
+2021/02/20 13:34:25 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_service.flask-app (expand)
+2021/02/20 13:34:25 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_namespace.flaskapp (destroy)
+2021/02/20 13:34:25 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_service.flask-app (destroy)
+2021/02/20 13:34:25 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_deployment.flask-app (destroy)
+2021/02/20 13:34:25 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] AttachSchemaTransformer: attaching resource schema to kubernetes_namespace.flaskapp (expand)
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021/02/20 13:34:25 [DEBUG] ReferenceTransformer: "kubernetes_deployment.flask-app (expand)" references: []
+2021/02/20 13:34:25 [DEBUG] ReferenceTransformer: "kubernetes_service.flask-app (expand)" references: []
+2021/02/20 13:34:25 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" references: []
+2021/02/20 13:34:25 [DEBUG] ReferenceTransformer: "kubernetes_namespace.flaskapp (expand)" references: []
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021/02/20 13:34:25 [TRACE] ForcedCBDTransformer: "kubernetes_service.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) has no CBD descendent, so skipping
+2021/02/20 13:34:25 [TRACE] ForcedCBDTransformer: "kubernetes_deployment.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) has no CBD descendent, so skipping
+2021/02/20 13:34:25 [TRACE] ForcedCBDTransformer: "kubernetes_namespace.flaskapp (destroy)" (*terraform.NodeDestroyResourceInstance) has no CBD descendent, so skipping
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2021/02/20 13:34:25 [TRACE] DestroyEdgeTransformer: "kubernetes_namespace.flaskapp (destroy)" (*terraform.NodeDestroyResourceInstance) destroys kubernetes_namespace.flaskapp
+2021/02/20 13:34:25 [TRACE] DestroyEdgeTransformer: "kubernetes_service.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) destroys kubernetes_service.flask-app
+2021/02/20 13:34:25 [TRACE] DestroyEdgeTransformer: "kubernetes_deployment.flask-app (destroy)" (*terraform.NodeDestroyResourceInstance) destroys kubernetes_deployment.flask-app
+2021/02/20 13:34:25 [TRACE] DestroyEdgeTransformer: kubernetes_deployment.flask-app (destroy) has stored dependency of kubernetes_service.flask-app (destroy)
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_deployment.flask-app (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2021/02/20 13:34:25 [DEBUG] pruneUnusedNodes: kubernetes_namespace.flaskapp (expand) is no longer needed, removing
+2021/02/20 13:34:25 [DEBUG] pruneUnusedNodes: kubernetes_deployment.flask-app (expand) is no longer needed, removing
+2021/02/20 13:34:25 [DEBUG] pruneUnusedNodes: kubernetes_service.flask-app (expand) is no longer needed, removing
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/02/20 13:34:25 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021/02/20 13:34:25 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+  kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  kubernetes_service.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+  provider["registry.terraform.io/hashicorp/kubernetes"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+    kubernetes_deployment.flask-app (destroy) - *terraform.NodeDestroyResourceInstance
+    kubernetes_namespace.flaskapp (destroy) - *terraform.NodeDestroyResourceInstance
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/kubernetes"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021/02/20 13:34:25 [DEBUG] Starting graph walk: walkDestroy
+2021/02/20 13:34:25 [TRACE] dag/walk: visiting "provider[\"registry.terraform.io/hashicorp/kubernetes\"]"
+2021/02/20 13:34:25 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-02-20T13:34:25.334-0500 [INFO]  plugin: configuring client automatic mTLS
+2021-02-20T13:34:25.359-0500 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5]
+2021-02-20T13:34:25.365-0500 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52795
+2021-02-20T13:34:25.365-0500 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5
+2021-02-20T13:34:25.405-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: configuring server automatic mTLS: timestamp=2021-02-20T13:34:25.404-0500
+2021-02-20T13:34:25.432-0500 [DEBUG] plugin.terraform-provider-kubernetes_v2.0.2_x5: plugin address: address=/var/folders/jt/d0b4ml1x16x8gc88fk3f43rh0000gn/T/plugin333411422 network=unix timestamp=2021-02-20T13:34:25.432-0500
+2021-02-20T13:34:25.432-0500 [DEBUG] plugin: using plugin: version=5
+2021/02/20 13:34:25 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/kubernetes\"]" provider for provider["registry.terraform.io/hashicorp/kubernetes"]
+2021/02/20 13:34:25 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/kubernetes"]: using explicit config only
+2021/02/20 13:34:25 [TRACE] GRPCProvider: GetSchema
+2021-02-20T13:34:25.485-0500 [TRACE] plugin.stdio: waiting for stdio data
+2021/02/20 13:34:25 [TRACE] GRPCProvider: Configure
+2021-02-20T13:34:25.517-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Using kubeconfig: /Users/merve/.kube/config: timestamp=2021-02-20T13:34:25.517-0500
+2021-02-20T13:34:25.519-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Enabling HTTP requests/responses tracing: timestamp=2021-02-20T13:34:25.519-0500
+2021/02/20 13:34:25 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"]": visit complete
+2021/02/20 13:34:25 [TRACE] dag/walk: visiting "kubernetes_service.flask-app (destroy)"
+2021/02/20 13:34:25 [TRACE] vertex "kubernetes_service.flask-app (destroy)": starting visit (*terraform.NodeDestroyResourceInstance)
+2021/02/20 13:34:25 [TRACE] dag/walk: visiting "kubernetes_namespace.flaskapp (destroy)"
+2021/02/20 13:34:25 [TRACE] vertex "kubernetes_namespace.flaskapp (destroy)": starting visit (*terraform.NodeDestroyResourceInstance)
+2021/02/20 13:34:25 [TRACE] EvalReadDiff: Read Delete change from plan for kubernetes_namespace.flaskapp
+2021/02/20 13:34:25 [TRACE] ReadResourceInstanceState: reading state for kubernetes_namespace.flaskapp
+2021/02/20 13:34:25 [TRACE] UpgradeResourceState: schema version of kubernetes_namespace.flaskapp is still 0; calling provider "kubernetes" for any other minor fixups
+2021/02/20 13:34:25 [TRACE] EvalReadDiff: Read Delete change from plan for kubernetes_service.flask-app
+2021/02/20 13:34:25 [TRACE] GRPCProvider: UpgradeResourceState
+2021/02/20 13:34:25 [TRACE] ReadResourceInstanceState: reading state for kubernetes_service.flask-app
+2021/02/20 13:34:25 [TRACE] UpgradeResourceState: schema version of kubernetes_service.flask-app is still 1; calling provider "kubernetes" for any other minor fixups
+2021/02/20 13:34:25 [TRACE] GRPCProvider: UpgradeResourceState
+2021/02/20 13:34:25 [DEBUG] EvalApply: ProviderMeta config value set
+2021/02/20 13:34:25 [DEBUG] EvalApply: ProviderMeta config value set
+2021/02/20 13:34:25 [DEBUG] kubernetes_namespace.flaskapp: applying the planned Delete change
+2021/02/20 13:34:25 [DEBUG] kubernetes_service.flask-app: applying the planned Delete change
+2021/02/20 13:34:25 [TRACE] GRPCProvider: ApplyResourceChange
+2021/02/20 13:34:25 [TRACE] GRPCProvider: ApplyResourceChange
+2021-02-20T13:34:25.522-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [INFO] Deleting namespace: "flask-app": timestamp=2021-02-20T13:34:25.522-0500
+2021-02-20T13:34:25.522-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [INFO] Deleting service: "flask-app": timestamp=2021-02-20T13:34:25.522-0500
+2021-02-20T13:34:25.522-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+DELETE /api/v1/namespaces/default/services/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Content-Length: 43
+Accept: application/json, */*
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{
+ "kind": "DeleteOptions",
+ "apiVersion": "v1"
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.522-0500
+2021-02-20T13:34:25.522-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+DELETE /api/v1/namespaces/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Content-Length: 43
+Accept: application/json, */*
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{
+ "kind": "DeleteOptions",
+ "apiVersion": "v1"
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.522-0500
+2021-02-20T13:34:25.555-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 627
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:25 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Namespace",
+ "apiVersion": "v1",
+ "metadata": {
+  "name": "flask-app",
+  "uid": "afc5da4d-43eb-429c-9c3e-0d201f1785d1",
+  "resourceVersion": "27234",
+  "creationTimestamp": "2021-02-20T18:21:04Z",
+  "deletionTimestamp": "2021-02-20T18:34:25Z",
+  "labels": {
+   "mylabel": "flask-app"
+  },
+  "annotations": {
+   "name": "flask-app"
+  },
+  "managedFields": [
+   {
+    "manager": "HashiCorp",
+    "operation": "Update",
+    "apiVersion": "v1",
+    "time": "2021-02-20T18:21:04Z",
+    "fieldsType": "FieldsV1",
+    "fieldsV1": {
+     "f:metadata": {
+      "f:annotations": {
+       ".": {},
+       "f:name": {}
+      },
+      "f:labels": {
+       ".": {},
+       "f:mylabel": {}
+      }
+     },
+     "f:status": {
+      "f:phase": {}
+     }
+    }
+   }
+  ]
+ },
+ "spec": {
+  "finalizers": [
+   "kubernetes"
+  ]
+ },
+ "status": {
+  "phase": "Terminating"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.555-0500
+2021-02-20T13:34:25.555-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Waiting for state to become: []: timestamp=2021-02-20T13:34:25.555-0500
+2021-02-20T13:34:25.555-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/namespaces/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.555-0500
+2021-02-20T13:34:25.566-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 627
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:25 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Namespace",
+ "apiVersion": "v1",
+ "metadata": {
+  "name": "flask-app",
+  "uid": "afc5da4d-43eb-429c-9c3e-0d201f1785d1",
+  "resourceVersion": "27234",
+  "creationTimestamp": "2021-02-20T18:21:04Z",
+  "deletionTimestamp": "2021-02-20T18:34:25Z",
+  "labels": {
+   "mylabel": "flask-app"
+  },
+  "annotations": {
+   "name": "flask-app"
+  },
+  "managedFields": [
+   {
+    "manager": "HashiCorp",
+    "operation": "Update",
+    "apiVersion": "v1",
+    "time": "2021-02-20T18:21:04Z",
+    "fieldsType": "FieldsV1",
+    "fieldsV1": {
+     "f:metadata": {
+      "f:annotations": {
+       ".": {},
+       "f:name": {}
+      },
+      "f:labels": {
+       ".": {},
+       "f:mylabel": {}
+      }
+     },
+     "f:status": {
+      "f:phase": {}
+     }
+    }
+   }
+  ]
+ },
+ "spec": {
+  "finalizers": [
+   "kubernetes"
+  ]
+ },
+ "status": {
+  "phase": "Terminating"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.566-0500
+2021-02-20T13:34:25.567-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Namespace flask-app status received: "Terminating": timestamp=2021-02-20T13:34:25.567-0500
+2021-02-20T13:34:25.567-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [TRACE] Waiting 200ms before next try: timestamp=2021-02-20T13:34:25.567-0500
+2021-02-20T13:34:25.597-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 163
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:25 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Status",
+ "apiVersion": "v1",
+ "metadata": {},
+ "status": "Success",
+ "details": {
+  "name": "flask-app",
+  "kind": "services",
+  "uid": "9425287b-3f8a-40bc-ab57-bce1682c4982"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.597-0500
+2021-02-20T13:34:25.597-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Waiting for state to become: [success]: timestamp=2021-02-20T13:34:25.597-0500
+2021-02-20T13:34:25.598-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/namespaces/default/services/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.598-0500
+2021-02-20T13:34:25.613-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 404 Not Found
+Content-Length: 194
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:25 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Status",
+ "apiVersion": "v1",
+ "metadata": {},
+ "status": "Failure",
+ "message": "services \"flask-app\" not found",
+ "reason": "NotFound",
+ "details": {
+  "name": "flask-app",
+  "kind": "services"
+ },
+ "code": 404
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.613-0500
+2021-02-20T13:34:25.613-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [INFO] Service flask-app deleted: timestamp=2021-02-20T13:34:25.613-0500
+2021/02/20 13:34:25 [TRACE] EvalWriteState: removing state object for kubernetes_service.flask-app
+2021/02/20 13:34:25 [TRACE] statemgr.Filesystem: creating backup snapshot at terraform.tfstate.backup
+2021/02/20 13:34:25 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 71
+2021/02/20 13:34:25 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2021/02/20 13:34:25 [TRACE] vertex "kubernetes_service.flask-app (destroy)": visit complete
+2021/02/20 13:34:25 [TRACE] dag/walk: visiting "kubernetes_deployment.flask-app (destroy)"
+2021/02/20 13:34:25 [TRACE] vertex "kubernetes_deployment.flask-app (destroy)": starting visit (*terraform.NodeDestroyResourceInstance)
+2021/02/20 13:34:25 [TRACE] EvalReadDiff: Read Delete change from plan for kubernetes_deployment.flask-app
+2021/02/20 13:34:25 [TRACE] ReadResourceInstanceState: reading state for kubernetes_deployment.flask-app
+2021/02/20 13:34:25 [TRACE] UpgradeResourceState: schema version of kubernetes_deployment.flask-app is still 1; calling provider "kubernetes" for any other minor fixups
+2021/02/20 13:34:25 [TRACE] GRPCProvider: UpgradeResourceState
+2021/02/20 13:34:25 [DEBUG] EvalApply: ProviderMeta config value set
+2021/02/20 13:34:25 [DEBUG] kubernetes_deployment.flask-app: applying the planned Delete change
+2021/02/20 13:34:25 [TRACE] GRPCProvider: ApplyResourceChange
+2021-02-20T13:34:25.675-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [INFO] Deleting deployment: "flask-app": timestamp=2021-02-20T13:34:25.674-0500
+2021-02-20T13:34:25.675-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+DELETE /apis/apps/v1/namespaces/default/deployments/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Content-Length: 48
+Accept: application/json, */*
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{
+ "kind": "DeleteOptions",
+ "apiVersion": "apps/v1"
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.675-0500
+2021-02-20T13:34:25.694-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 181
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:25 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Status",
+ "apiVersion": "v1",
+ "metadata": {},
+ "status": "Success",
+ "details": {
+  "name": "flask-app",
+  "group": "apps",
+  "kind": "deployments",
+  "uid": "f38adf79-81b7-4345-9bb7-a39d3c14b4d5"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.694-0500
+2021-02-20T13:34:25.694-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Waiting for state to become: [success]: timestamp=2021-02-20T13:34:25.694-0500
+2021-02-20T13:34:25.695-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /apis/apps/v1/namespaces/default/deployments/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.695-0500
+2021-02-20T13:34:25.701-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 404 Not Found
+Content-Length: 220
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:25 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Status",
+ "apiVersion": "v1",
+ "metadata": {},
+ "status": "Failure",
+ "message": "deployments.apps \"flask-app\" not found",
+ "reason": "NotFound",
+ "details": {
+  "name": "flask-app",
+  "group": "apps",
+  "kind": "deployments"
+ },
+ "code": 404
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.701-0500
+2021-02-20T13:34:25.701-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [INFO] Deployment flask-app deleted: timestamp=2021-02-20T13:34:25.701-0500
+2021/02/20 13:34:25 [TRACE] EvalWriteState: removing state object for kubernetes_deployment.flask-app
+2021/02/20 13:34:25 [TRACE] statemgr.Filesystem: have already backed up original terraform.tfstate to terraform.tfstate.backup on a previous write
+2021/02/20 13:34:25 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 72
+2021/02/20 13:34:25 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2021/02/20 13:34:25 [TRACE] vertex "kubernetes_deployment.flask-app (destroy)": visit complete
+2021-02-20T13:34:25.770-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/namespaces/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.770-0500
+2021-02-20T13:34:25.777-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 627
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:25 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Namespace",
+ "apiVersion": "v1",
+ "metadata": {
+  "name": "flask-app",
+  "uid": "afc5da4d-43eb-429c-9c3e-0d201f1785d1",
+  "resourceVersion": "27234",
+  "creationTimestamp": "2021-02-20T18:21:04Z",
+  "deletionTimestamp": "2021-02-20T18:34:25Z",
+  "labels": {
+   "mylabel": "flask-app"
+  },
+  "annotations": {
+   "name": "flask-app"
+  },
+  "managedFields": [
+   {
+    "manager": "HashiCorp",
+    "operation": "Update",
+    "apiVersion": "v1",
+    "time": "2021-02-20T18:21:04Z",
+    "fieldsType": "FieldsV1",
+    "fieldsV1": {
+     "f:metadata": {
+      "f:annotations": {
+       ".": {},
+       "f:name": {}
+      },
+      "f:labels": {
+       ".": {},
+       "f:mylabel": {}
+      }
+     },
+     "f:status": {
+      "f:phase": {}
+     }
+    }
+   }
+  ]
+ },
+ "spec": {
+  "finalizers": [
+   "kubernetes"
+  ]
+ },
+ "status": {
+  "phase": "Terminating"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:25.777-0500
+2021-02-20T13:34:25.777-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [DEBUG] Namespace flask-app status received: "Terminating": timestamp=2021-02-20T13:34:25.777-0500
+2021-02-20T13:34:25.777-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:25 [TRACE] Waiting 400ms before next try: timestamp=2021-02-20T13:34:25.777-0500
+2021-02-20T13:34:26.181-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/namespaces/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:26.181-0500
+2021-02-20T13:34:26.192-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 627
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:26 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Namespace",
+ "apiVersion": "v1",
+ "metadata": {
+  "name": "flask-app",
+  "uid": "afc5da4d-43eb-429c-9c3e-0d201f1785d1",
+  "resourceVersion": "27234",
+  "creationTimestamp": "2021-02-20T18:21:04Z",
+  "deletionTimestamp": "2021-02-20T18:34:25Z",
+  "labels": {
+   "mylabel": "flask-app"
+  },
+  "annotations": {
+   "name": "flask-app"
+  },
+  "managedFields": [
+   {
+    "manager": "HashiCorp",
+    "operation": "Update",
+    "apiVersion": "v1",
+    "time": "2021-02-20T18:21:04Z",
+    "fieldsType": "FieldsV1",
+    "fieldsV1": {
+     "f:metadata": {
+      "f:annotations": {
+       ".": {},
+       "f:name": {}
+      },
+      "f:labels": {
+       ".": {},
+       "f:mylabel": {}
+      }
+     },
+     "f:status": {
+      "f:phase": {}
+     }
+    }
+   }
+  ]
+ },
+ "spec": {
+  "finalizers": [
+   "kubernetes"
+  ]
+ },
+ "status": {
+  "phase": "Terminating"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:26.192-0500
+2021-02-20T13:34:26.192-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [DEBUG] Namespace flask-app status received: "Terminating": timestamp=2021-02-20T13:34:26.192-0500
+2021-02-20T13:34:26.192-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [TRACE] Waiting 800ms before next try: timestamp=2021-02-20T13:34:26.192-0500
+2021-02-20T13:34:26.992-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/namespaces/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:26.992-0500
+2021-02-20T13:34:26.999-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 627
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:27 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Namespace",
+ "apiVersion": "v1",
+ "metadata": {
+  "name": "flask-app",
+  "uid": "afc5da4d-43eb-429c-9c3e-0d201f1785d1",
+  "resourceVersion": "27234",
+  "creationTimestamp": "2021-02-20T18:21:04Z",
+  "deletionTimestamp": "2021-02-20T18:34:25Z",
+  "labels": {
+   "mylabel": "flask-app"
+  },
+  "annotations": {
+   "name": "flask-app"
+  },
+  "managedFields": [
+   {
+    "manager": "HashiCorp",
+    "operation": "Update",
+    "apiVersion": "v1",
+    "time": "2021-02-20T18:21:04Z",
+    "fieldsType": "FieldsV1",
+    "fieldsV1": {
+     "f:metadata": {
+      "f:annotations": {
+       ".": {},
+       "f:name": {}
+      },
+      "f:labels": {
+       ".": {},
+       "f:mylabel": {}
+      }
+     },
+     "f:status": {
+      "f:phase": {}
+     }
+    }
+   }
+  ]
+ },
+ "spec": {
+  "finalizers": [
+   "kubernetes"
+  ]
+ },
+ "status": {
+  "phase": "Terminating"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:26.998-0500
+2021-02-20T13:34:26.999-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [DEBUG] Namespace flask-app status received: "Terminating": timestamp=2021-02-20T13:34:26.999-0500
+2021-02-20T13:34:26.999-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:26 [TRACE] Waiting 1.6s before next try: timestamp=2021-02-20T13:34:26.999-0500
+2021-02-20T13:34:28.599-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:28 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/namespaces/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:28.599-0500
+2021-02-20T13:34:28.607-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:28 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Content-Length: 627
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:28 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Namespace",
+ "apiVersion": "v1",
+ "metadata": {
+  "name": "flask-app",
+  "uid": "afc5da4d-43eb-429c-9c3e-0d201f1785d1",
+  "resourceVersion": "27234",
+  "creationTimestamp": "2021-02-20T18:21:04Z",
+  "deletionTimestamp": "2021-02-20T18:34:25Z",
+  "labels": {
+   "mylabel": "flask-app"
+  },
+  "annotations": {
+   "name": "flask-app"
+  },
+  "managedFields": [
+   {
+    "manager": "HashiCorp",
+    "operation": "Update",
+    "apiVersion": "v1",
+    "time": "2021-02-20T18:21:04Z",
+    "fieldsType": "FieldsV1",
+    "fieldsV1": {
+     "f:metadata": {
+      "f:annotations": {
+       ".": {},
+       "f:name": {}
+      },
+      "f:labels": {
+       ".": {},
+       "f:mylabel": {}
+      }
+     },
+     "f:status": {
+      "f:phase": {}
+     }
+    }
+   }
+  ]
+ },
+ "spec": {
+  "finalizers": [
+   "kubernetes"
+  ]
+ },
+ "status": {
+  "phase": "Terminating"
+ }
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:28.607-0500
+2021-02-20T13:34:28.607-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:28 [DEBUG] Namespace flask-app status received: "Terminating": timestamp=2021-02-20T13:34:28.607-0500
+2021-02-20T13:34:28.607-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:28 [TRACE] Waiting 3.2s before next try: timestamp=2021-02-20T13:34:28.607-0500
+2021/02/20 13:34:30 [TRACE] dag/walk: vertex "root" is waiting for "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)"
+2021/02/20 13:34:30 [TRACE] dag/walk: vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)" is waiting for "kubernetes_namespace.flaskapp (destroy)"
+2021/02/20 13:34:30 [TRACE] dag/walk: vertex "meta.count-boundary (EachMode fixup)" is waiting for "kubernetes_namespace.flaskapp (destroy)"
+2021-02-20T13:34:31.808-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:31 [DEBUG] Kubernetes API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /api/v1/namespaces/flask-app HTTP/1.1
+Host: 127.0.0.1:59980
+User-Agent: HashiCorp/1.0 Terraform/0.14.6
+Accept: application/json, */*
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:31.808-0500
+2021-02-20T13:34:31.815-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:31 [DEBUG] Kubernetes API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 404 Not Found
+Content-Length: 198
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sat, 20 Feb 2021 18:34:31 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 576dfad0-6803-41ca-9541-bfc4ce861da2
+X-Kubernetes-Pf-Prioritylevel-Uid: 20156dd6-f72e-402f-b418-c3f7029b291c
+
+{
+ "kind": "Status",
+ "apiVersion": "v1",
+ "metadata": {},
+ "status": "Failure",
+ "message": "namespaces \"flask-app\" not found",
+ "reason": "NotFound",
+ "details": {
+  "name": "flask-app",
+  "kind": "namespaces"
+ },
+ "code": 404
+}
+
+-----------------------------------------------------: timestamp=2021-02-20T13:34:31.815-0500
+2021-02-20T13:34:31.815-0500 [INFO]  plugin.terraform-provider-kubernetes_v2.0.2_x5: 2021/02/20 13:34:31 [INFO] Namespace flask-app deleted: timestamp=2021-02-20T13:34:31.815-0500
+2021/02/20 13:34:31 [TRACE] EvalWriteState: removing state object for kubernetes_namespace.flaskapp
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: have already backed up original terraform.tfstate to terraform.tfstate.backup on a previous write
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 73
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2021/02/20 13:34:31 [TRACE] vertex "kubernetes_namespace.flaskapp (destroy)": visit complete
+2021/02/20 13:34:31 [TRACE] dag/walk: visiting "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)"
+2021/02/20 13:34:31 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2021/02/20 13:34:31 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021/02/20 13:34:31 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021/02/20 13:34:31 [TRACE] GRPCProvider: Close
+2021/02/20 13:34:31 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-02-20T13:34:31.841-0500 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-02-20T13:34:31.845-0500 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.0.2/darwin_amd64/terraform-provider-kubernetes_v2.0.2_x5 pid=52795
+2021-02-20T13:34:31.845-0500 [DEBUG] plugin: plugin exited
+2021/02/20 13:34:31 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/kubernetes\"] (close)": visit complete
+2021/02/20 13:34:31 [TRACE] dag/walk: visiting "root"
+2021/02/20 13:34:31 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021/02/20 13:34:31 [TRACE] vertex "root": visit complete
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: have already backed up original terraform.tfstate to terraform.tfstate.backup on a previous write
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 74
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2021/02/20 13:34:31 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
