@@ -1,0 +1,35 @@
+apiVersion: apps/v1 #version of kubernetes api
+kind: Deployment #kind of the file...it can be services, pods, secrets configmap
+metadata: 
+  name: flask-app #name of my app. for microservice structure this is the name of the microservice
+spec:
+  selector:
+    matchLabels:
+      app: flask-app
+  replicas: 2 #tells deployment to run 3 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+      - name: flask-app-container # '-' indicates array
+        image: vakkasoglu/capstone-project
+        ports:
+        - containerPort: 5000 # it maps the port 5000 inside the container
+---
+# https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service
+ # service maps the pods into one IP address
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-app #name of the service
+spec:
+  type: NodePort
+  selector:
+    app: flask-app
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 31000

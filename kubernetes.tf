@@ -10,31 +10,45 @@ provider "kubernetes" {
   config_path = "~/.kube/config"
 }
 
+resource "kubernetes_namespace" "flaskapp" {
+  metadata {
+    annotations = {
+      name = "flask-app"
+    }
+
+    labels = {
+      mylabel = "flask-app"
+    }
+
+    name = "flask-app"
+  }
+}
+
 resource "kubernetes_deployment" "flask-app" {
   metadata {
-    name = "scalable-flask-app"
+    name = "flask-app"
     labels = {
-      App = "ScalableNginxExample"
+      App = "flask-app"
     }
   }
 
   spec {
-    replicas = 2
+    replicas = 3
     selector {
       match_labels = {
-        App = "ScalableFlaskApp"
+        App = "flask-app"
       }
     }
     template {
       metadata {
         labels = {
-          App = "ScalableFlaskApp"
+          App = "flask-app"
         }
       }
       spec {
         container {
           image = "vakkasoglu/capstone-project"
-          name  = "example"
+          name  = "flask-app"
 
           port {
             container_port = 5000
@@ -55,16 +69,16 @@ resource "kubernetes_deployment" "flask-app" {
     }
   }
 }
-resource "kubernetes_service" "flask" {
+resource "kubernetes_service" "flask-app" {
   metadata {
     name = "flask-app"
   }
   spec {
     selector = {
-      App = kubernetes_deployment.flask.spec.0.template.0.metadata[0].labels.App
+      App = kubernetes_deployment.flask-app.spec.0.template.0.metadata[0].labels.App
     }
     port {
-      node_port   = 31000
+      node_port   = 30201
       port        = 5000
       target_port = 5000
     }
