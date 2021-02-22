@@ -10,19 +10,19 @@ provider "kubernetes" {
   config_path = "~/.kube/config"
 }
 
-# resource "kubernetes_namespace" "flaskapp" {
-#   metadata {
-#     annotations = {
-#       name = "flask-app"
-#     }
+resource "kubernetes_namespace" "flaskapp" {
+  metadata {
+    annotations = {
+      name = "flask-app"
+    }
 
-#     labels = {
-#       mylabel = "flask-app"
-#     }
+    labels = {
+      mylabel = "flask-app"
+    }
 
-#     name = "flask-app"
-#   }
-# }
+    name = "flask-app"
+  }
+}
 
 resource "kubernetes_deployment" "flask-app" {
   metadata {
