@@ -68,7 +68,14 @@ resource "kubernetes_deployment" "flask-app" {
       }
     }
   }
+  # deployment shouldn't take longer than a few minutes normally
+  timeouts {
+    create = "1m"
+    update = "1m"
+    delete = "2m"
+  }
 }
+
 resource "kubernetes_service" "flask-app" {
   metadata {
     name = "flask-app"
