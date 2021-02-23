@@ -1,4 +1,5 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,jekyll,windows,linux,terraform
+terraform.txt
 #VSCODE
 .vscode
 #ignore outputs.tf
